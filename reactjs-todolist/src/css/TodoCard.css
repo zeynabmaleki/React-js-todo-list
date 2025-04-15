@@ -25,14 +25,21 @@
     gap: 10px; /* Space between icons */
 }
 
-.action-container i {
+.action-container button {
+    all: unset; /* Reset all default button styles */
     cursor: pointer;
     font-size: 18px;
     color: #ffffff; /* White for better visibility */
     transition: color 0.2s ease, transform 0.2s ease;
+    background: none; /* Ensure no background is applied */
+    border: none; /* Remove any default borders */
+    padding: 5px; /* Add some padding for better clickability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.action-container i:hover {
-    color: #ff6b6b; /* Change color on hover */
+.action-container button:hover {
+    color: #a140e6; /* Change color on hover */
     transform: scale(1.2); /* Slight zoom on hover */
 }

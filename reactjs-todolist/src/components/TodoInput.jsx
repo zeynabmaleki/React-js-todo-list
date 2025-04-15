@@ -2,8 +2,8 @@ import React, { useState } from 'react'; // Import useState
 import '../css/TodoInput.css';
 
 export default function TodoInput(props) {
-    const { handleAddTodos } = props;
-    const [todoValue, setTodoValue] = useState(''); // Initialize useState
+    const { handleAddTodos, todoValue, setTodoValue } = props;
+
 
     return (
         <div className="todo-input">
